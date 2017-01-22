@@ -4,10 +4,12 @@ Docker development environment
 Steps to create environment on Mac and Linux:
 
 1. Give executable permission to develop script
+
     ```bash
        chmod +x develop.sh
     ```
 2. Spin up docker environment
+
     ```bash
        ./develop.sh up -d --build
     ``` 
