@@ -1,6 +1,9 @@
 # docker
 Docker development environment
 
+Docker must be installed, please visit 	[Docker installation site](https://docs.docker.com/engine/installation/) to get started
+
+
 Steps to create environment on Mac and Linux:
 
 1. Give executable permission to develop script
