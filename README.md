@@ -7,10 +7,10 @@ Steps to create environment:
     ```bash
        chmod +x develop.sh
     ```
-2. Spin up docker environment 
+2. Spin up docker environment
     ```bash
        ./develop.sh up -d --build
-    ```
+    ``` 
 3. Run composer inside of php container
     ```bash
         docker exec -it php composer install
