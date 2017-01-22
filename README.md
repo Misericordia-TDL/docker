@@ -1,7 +1,7 @@
 # docker
 Docker development environment
 
-Steps to create environment:
+Steps to create environment on Mac and Linux:
 
 1. Give executable permission to develop script
     ```bash
