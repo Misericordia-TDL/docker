@@ -1,2 +1,5 @@
 
 .idea/
+src/composer.lock
+Would skip repository src/vendor/mongodb/mongodb
+src/vendor/
