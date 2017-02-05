@@ -13,6 +13,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y \
 RUN docker-php-ext-enable xdebug
 RUN pecl install mongodb && docker-php-ext-enable mongodb
 COPY config/xdebug.ini /tmp
+COPY config/000-default.conf /etc/apache2/sites-available
 RUN cat /tmp/xdebug.ini >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN rm /tmp/xdebug.ini
 
@@ -20,4 +21,6 @@ RUN rm /tmp/xdebug.ini
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/bin/composer
 
-WORKDIR /var/www/html/
+RUN a2enmod rewrite
+
+WORKDIR /var/www/
